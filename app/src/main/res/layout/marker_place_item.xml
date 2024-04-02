@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/marker_place_shape"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="42dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/place_bydefault"
+        android:scaleType="centerCrop"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@color/main_color2"/>
+
+    <FrameLayout
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="-18dp"
+        android:layout_marginTop="28dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/number_of_people"/> <!-- Créez un drawable pour votre cercle gris -->
+
+        <!-- TextView pour le nombre -->
+        <TextView
+            android:id="@+id/badgeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="99"
+            android:textSize="12sp" />
+    </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

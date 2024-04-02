@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Holynx</string>
+    <string name="login">Identification</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="connect">Connexion</string>
+    <string name="error">Erreur</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="name">Nom</string>
+    <string name="main_location">Domicile</string>
+    <string name="home">Domicile</string>
+    <string name="i_already_have_an_account">J\'ai déjà un compte</string>
+    <string name="reccord_account">Enregistrer le compte</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="logout">Déconnexion</string>
+    <string name="save_event">Enregistrer l\'évenement</string>
+    <string name="legal_informations">Informations légales</string>
+    <string name="feedback">Donner son avis</string>
+    <string name="settings">Paramètres</string>
+    <string name="my_profile">Mon Profil</string>
+    <string name="map">Carte</string>
+    <string name="edit_profile">Modifier mon profil</string>
+    <string name="friends">AMIS</string>
+    <string name="events">Evenements</string>
+    <string name="connexion">Connexion</string>
+    <string name="onboarding5">En vous inscrivant vous acceptez nos conditions d\'utilisatation</string>
+    <string name="onboarding4">Soyez informés quand des amis sont proches et planifiez des retrouvailles</string>
+    <string name="onboarding3">Ajoutez vos lieux favoris, créez des évenements et remplissez vos déplacements dans votre calendrier</string>
+    <string name="onboarding2">Ajoutez des amis et indiquez quel est votre cercle proche</string>
+    <string name="onboarding1">Créez un profil avec votre adresse par défaut</string>
+    <string name="enter_the_name_of">Entrez le nom de la personne que vous cherchez...</string>
+    <string name="at_home">Chez moi</string>
+    <string name="on_the_move">En déplacement</string>
+    <string name="from">du</string>
+    <string name="to">au</string>
+    <string name="event">Evènement</string>
+    <string name="place">Lieu</string>
+    <string name="public_event">Public</string>
+    <string name="private_event">Privé</string>
+    <string name="calendar">Calendrier</string>
+    <string name="places">Places</string>
+    <string name="CALENDAR">CALENDRIER</string>
+    <string name="PLACES">PLACES</string>
+</resources>

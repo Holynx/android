@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color1"
+    tools:context=".MyPlaceActivity">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            android:id="@+id/bar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/windowBackground"
+                android:id="@+id/toolbar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        app:tint="@color/main_color2"
+                        android:id="@+id/back"
+                        android:src="@drawable/ic_back" />
+
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd = "true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/ic_delete"
+                        app:tint="@color/main_color2" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/top">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/image_profile"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edit"
+                                android:src="@drawable/ic_edit"
+                                android:layout_marginRight="10dp"
+                                app:tint="@color/second_color2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/title"
+                                android:gravity="center_vertical"
+                                android:fontFamily="@font/font1"
+                                android:textSize="18sp"
+                                android:textColor="@color/main_color2"
+                                android:text="Place"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/peopleIcon"
+                                android:src="@drawable/ic_group"
+                                app:tint="@color/main_color2"
+                                android:layout_alignParentEnd = "true"
+                                android:layout_marginStart="5dp"/>
+
+                            <TextView
+                                android:id="@+id/number"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:layout_marginStart="-16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/main_color2"
+                                android:text="99"
+                                android:padding="1dp"
+                                android:background="@drawable/round_background_badge2"
+                                android:textSize="12sp" />
+                    </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center">
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/font1"
+                                        android:id="@+id/permanent"
+                                        android:textSize="15sp"
+                                        android:textColor="@color/main_color3"
+                                        android:text="Permanent place"
+                                        android:visibility="gone"/>
+                                </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/temporal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/font2"
+                                    android:text="From "
+                                    android:textColor="@color/main_color2"
+                                    android:textSize="15sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/font1"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/main_color3"
+                                    android:id="@+id/dateStart"
+                                    android:text="Date"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/font2"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/main_color2"
+                                    android:text=" to "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/font1"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/main_color3"
+                                    android:id="@+id/dateEnd"
+                                    android:text="Date"/>
+                            </LinearLayout>
+                            </FrameLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:fontFamily="@font/font2"
+                                android:textColor="@color/main_color2"
+                                android:textSize="15sp"
+                                android:id="@+id/location"
+                                android:text="Location"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/mid"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No description"
+                        android:fontFamily="@font/font2"
+                        android:textSize="15sp"
+                        android:textColor="@color/main_color2"
+                        android:id="@+id/description"
+                        android:maxLines="5"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/bottom"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/month"
+                            android:text="MONTH"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/font1"
+                            android:textColor="@color/main_color2"
+                            android:gravity="center"/>
+
+                        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/compactcalendar_view"
+                            android:layout_width="fill_parent"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_height="220dp"
+                            app:headerColor="@color/main_color1"
+                            app:todayLabelColor="@color/main_color2"
+                            app:headerLabelColor="@color/main_color2"
+                            app:compactCalendarTargetHeight="250dp"
+                            app:compactCalendarTextSize="12sp"
+                            app:compactCalendarBackgroundColor="@color/main_color1"
+                            app:compactCalendarTextColor="@color/main_color2"
+                            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/main_color3"
+                            app:compactCalendarCurrentDayBackgroundColor="@color/main_color2"
+                            app:compactCalendarMultiEventIndicatorColor="@color/main_color3"
+                            style="@style/CustomCompactCalendarStyle"
+                            />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/second_color2"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycler_view_attenders"
+                        android:layout_below="@+id/my_calendar" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>

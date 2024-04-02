@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="EventName"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/main_color2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/eventplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:fontFamily="@font/font2"
+            android:text="Event place" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventdate"
+            android:text="Event date"
+            android:fontFamily="@font/font2"
+            android:maxLines="1"/>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/poke"
+        android:gravity="center"
+        android:layout_marginEnd="5dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_background_button"
+        android:padding="5dp"
+        android:tint="@color/main_color1"
+        android:src="@drawable/ic_notif_poke">
+    </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send a Poke"
+            android:fontFamily="@font/font1"
+            android:textSize="12sp"
+            android:textColor="@color/main_color2">
+
+        </TextView>
+</LinearLayout>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/second_color2"/>
+</LinearLayout>

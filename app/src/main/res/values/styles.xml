@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomCompactCalendarStyle">
+        <item name="compactCalendarTextColor">@color/main_color2</item>
+        <item name="compactCalendarCurrentDayTextColor">@color/white</item>
+        <!-- Ajoutez d'autres propriétés de style si nécessaire -->
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/main_color2</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/main_color2</item>
+    </style>
+
+
+    <style name="DatePickerTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/main_color2</item>
+        <item name="android:textColorPrimary">@color/main_color2</item>
+        <item name="android:fontFamily">@font/font1</item>
+        <item name="android:textColor">@color/main_color2</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">#007fff</item>
+    </style>
+    <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/main_color3</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    </style>
+
+    <style name="SpinnerItemStyle">
+        <item name="android:fontFamily">@font/font2</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/main_color2</item>
+        <item name="android:textColorPrimary">@color/main_color2</item>
+        <item name="android:fontFamily">@font/font1</item>
+        <item name="android:textColor">@color/main_color2</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MyPositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MyNegativeButtonStyle</item>
+    </style>
+
+    <style name="MyPositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/main_color2</item>
+    </style>
+
+    <style name="MyNegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/main_color2</item>
+    </style>
+
+
+</resources>

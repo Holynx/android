@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".CreateAccountActivity"
+    android:background="@color/main_color3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textColor="@color/main_color1"
+                android:textSize="30sp"
+                android:fontFamily="@font/font1"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/errorCreateAccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Erreur"
+                android:textColor="#f2f2f2"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+            </TextView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/main_color3"
+            android:fontFamily="@font/font2"
+            android:layout_marginTop="35dp"
+            android:hint="@string/error"
+            android:maxLength="30"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+             />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:maxLength="30"
+            android:textColorHint="@color/main_color3"
+            android:fontFamily="@font/font2"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:hint="@string/email"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    android:textColorHint="@color/main_color3"
+                    android:fontFamily="@font/font2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/location"
+            android:hint="@string/email"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawableTint="@color/main_color3"
+            android:textColorHint="@color/main_color3"
+            android:fontFamily="@font/font2"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/password"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="2dp"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/main_color3"
+                    android:fontFamily="@font/font2"
+                    android:imeOptions="actionDone"/>
+
+
+            <TextView
+                android:id="@+id/alreadyHasAccountBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/i_already_have_an_account"
+                android:gravity="center"
+                android:textColor="@color/main_color1"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/font2"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/main_color1"/>
+
+
+                <Button
+                    android:id="@+id/createAccountBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/main_color2"
+                    android:text="@string/reccord_account"
+                    android:textColor="@color/main_color1"
+                    android:textSize="18sp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center">
+
+                </Button>
+
+
+</LinearLayout>

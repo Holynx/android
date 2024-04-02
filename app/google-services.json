@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695311806164",
+    "project_id": "spotcal-a0246",
+    "storage_bucket": "spotcal-a0246.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695311806164:android:b1b463fc0992d8f5d49541",
+        "android_client_info": {
+          "package_name": "com.example.applicationv3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUIAj4E-TLSmQblRsmedWNy4PFcvN1cjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

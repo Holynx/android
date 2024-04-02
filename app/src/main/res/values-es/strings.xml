@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Holynx</string>
+    <string name="login">Conectarse</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="connect">Conexión</string>
+    <string name="error">Error</string>
+    <string name="create_account">Crear una cuenta</string>
+    <string name="logout">Desconexión</string>
+    <string name="save_event">Guardar Evento</string>
+    <string name="legal_informations">Información legal</string>
+    <string name="feedback">Opinar</string>
+    <string name="settings">Configuración</string>
+    <string name="map">Mapa</string>
+    <string name="my_profile">Mi Perfil</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="friends">AMIGOS</string>
+    <string name="events">Eventos</string>
+    <string name="connexion">Conexión</string>
+    <string name="onboarding5">Al registrarse acepta nuestras condiciones de uso</string>
+    <string name="onboarding4">Estar informado cuando los amigos están cerca y planificar una reunión</string>
+    <string name="onboarding3">Añade tus lugares favoritos, crea eventos y completa tus viajes en tu calendario</string>
+    <string name="onboarding2">Añade amigos e indica tu círculo íntimo</string>
+    <string name="onboarding1">Crear un perfil con su dirección por defecto</string>
+</resources>

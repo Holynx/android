@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/item_selector"
+    android:gravity="center"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image_profile"
+        android:layout_gravity="start|center"
+        android:src="@drawable/place_bydefault"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_profile"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+
+        android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/font1"
+                        android:maxLines="1"
+                        android:text="Title"
+                        android:textColor="@color/main_color2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/eventPlace"
+                        android:text="Event"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/main_color3"
+                        android:maxLines="1"/>
+                </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:fontFamily="@font/font2"
+            android:text="location"
+            android:maxLines="1"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/date"
+                android:text="From to"
+                android:fontFamily="@font/font2"
+                android:maxLines="1"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/peopleIcon"
+        android:src="@drawable/ic_group"
+        android:tint="@color/main_color2"
+        android:layout_alignParentEnd = "true" />
+
+    <TextView
+        android:id="@+id/numberPeople"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_marginStart="-16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font1"
+        android:textColor="@color/main_color2"
+        android:text="99"
+        android:padding="1dp"
+        android:background="@drawable/round_background_badge2"
+        android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/second_color2"/>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color3"
+    tools:context=".EditProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="@color/main_color3">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/main_color3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/main_color1"
+                    android:id="@+id/close"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/font1"
+                    android:text="Edit Profile"
+                    android:textColor="@color/main_color1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/main_color1"
+                    android:id="@+id/save"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/main_color3"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher2"
+            android:layout_gravity="center"
+            android:id="@+id/image_profile"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="-40dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/round_background_badge"
+            android:src="@drawable/ic_change_photo"
+            android:tint="@color/main_color1"
+            android:id="@+id/change_photo"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:hint="Full name"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:fontFamily="@font/font2"
+            android:textColorHint="@color/main_color3"
+            android:layout_marginTop="20dp"
+            app:met_floatingLabel="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Username"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:fontFamily="@font/font2"
+            android:textColorHint="@color/main_color3"
+            android:layout_marginTop="20dp"
+            app:met_floatingLabel="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:hint="Username"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:fontFamily="@font/font2"
+            android:textColorHint="@color/main_color3"
+            android:layout_marginTop="20dp"
+            app:met_floatingLabel="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:hint="Location"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawableTint="@color/main_color3"
+            android:fontFamily="@font/font2"
+            android:textColorHint="@color/main_color3"
+            android:editable="false"
+            android:layout_marginTop="20dp"
+            app:met_floatingLabel="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/bio"
+            android:hint="Bio"
+            android:background="@drawable/edit_text_background"
+            android:padding="2dp"
+            android:fontFamily="@font/font2"
+            android:textColorHint="@color/main_color3"
+            android:layout_marginTop="20dp"
+            app:met_floatingLabel="normal"
+            android:gravity="top"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

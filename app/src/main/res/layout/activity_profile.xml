@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color3"
+        android:id="@+id/bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color3"
+            android:id="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:tint="@color/main_color1"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/font1"
+                    android:maxLines="1"
+                    android:text="Profile"
+                    android:textColor="@color/main_color1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/top"
+                android:padding="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/image_profile"
+                    android:src="@drawable/user_bydefault"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/add_remove"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/main_color2"
+                            android:fontFamily="@font/font1"
+                            android:textColor="@color/main_color3"
+                            android:gravity="center"
+                            android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/acceptBtn"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/main_color2"
+                        android:textColor="@color/main_color3"
+                        android:fontFamily="@font/font1"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:text="Accept"
+                        android:visibility="gone"
+                        android:layout_alignParentStart="true"
+                         />
+                    <Button
+                        android:id="@+id/refuseBtn"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/main_color2"
+                        android:textColor="@color/main_color3"
+                        android:fontFamily="@font/font1"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:text="Refuse"
+                        android:visibility="gone"
+                        android:layout_toEndOf="@+id/acceptBtn"
+                        android:layout_marginStart="10dp"
+                    />
+                    </RelativeLayout>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/switchText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:text="Best Friend"
+                            android:textColor="@color/main_color2" />
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switchText2"
+                            android:fontFamily="@font/font1"
+                            android:text="Friend"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/main_color3"/>
+                    </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:id="@+id/mid"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:id="@+id/username"
+                        android:fontFamily="@font/font1"
+                        android:text="surname"
+                        android:textColor="@color/main_color3"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:fontFamily="@font/font1"
+                        android:text=" - "
+                        android:textColor="@color/main_color2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:id="@+id/fullname"
+                        android:text="fullname"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/main_color2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_default_home"
+                        app:tint="@color/main_color2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:id="@+id/location"
+                    android:fontFamily="@font/font1"
+                    android:text="location"
+                    android:textColor="@color/main_color2"/>
+            </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/bio"
+                    android:maxLines="4"
+                    android:text="blbla"
+                    android:fontFamily="@font/font2"
+                    android:textColor="@color/main_color2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/friend_frame"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/month"
+                    android:text="MONTH"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/main_color2"
+                    android:gravity="center"/>
+
+                <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/compactcalendar_view"
+                    android:layout_width="fill_parent"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="220dp"
+                    app:compactCalendarTargetHeight="250dp"
+                    app:compactCalendarTextSize="12sp"
+                    app:compactCalendarBackgroundColor="@color/white"
+                    app:compactCalendarTextColor="@color/main_color2"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="@color/main_color3"
+                    app:compactCalendarCurrentDayBackgroundColor="@color/main_color2"
+                    app:compactCalendarMultiEventIndicatorColor="@color/main_color3"
+                    style="@style/CustomCompactCalendarStyle"
+                    />
+
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_view_events"
+                android:layout_below="@+id/compactcalendar_view"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

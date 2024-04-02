@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Holynx</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="connect">Connect</string>
+    <string name="error">Error</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="main_location">Main location</string>
+    <string name="home">Home</string>
+    <string name="i_already_have_an_account">I already have an account</string>
+    <string name="reccord_account">Reccord account</string>
+    <string name="create_account">Create account</string>
+    <string name="logout">Logout</string>
+    <string name="save_event">Save Event</string>
+    <string name="legal_informations">Legal informations</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="map">Map</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="friends">FRIENDS</string>
+    <string name="events">Events</string>
+    <string name="connexion">Connexion</string>
+    <string name="onboarding5">By registering you agree to our terms of use</string>
+    <string name="onboarding4">Be informed when friends are close and plan a reunion</string>
+    <string name="onboarding3">Add your favorite places, create events and fill in your trips in your calendar</string>
+    <string name="onboarding2">Add friends and indicate your inner circle</string>
+    <string name="onboarding1">Create a profile with your default address</string>
+    <string name="enter_the_name_of">Enter the name of the person you\'re looking for...</string>
+    <string name="at_home">At home</string>
+    <string name="on_the_move">On the move</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="event">Event</string>
+    <string name="place">Place</string>
+    <string name="public_event">Public</string>
+    <string name="private_event">Private</string>
+    <string name="calendar">Calendar</string>
+    <string name="places">Places</string>
+    <string name="CALENDAR">CALENDAR</string>
+    <string name="PLACES">PLACES</string>
+</resources>
